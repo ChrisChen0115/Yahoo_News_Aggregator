@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yahoo 新聞爬蟲</title>
+</head>
+<body>
+    <h1>Yahoo 新聞爬蟲機器人</h1>
+    <form action="{% url 'crawl_and_show' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">開始爬取新聞</button>
+    </form>
+</body>
+</html>
