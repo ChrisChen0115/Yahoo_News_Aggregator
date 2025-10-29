@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import time
 
 def yahoo_scraper():
-    service =  Service(executable_path='D:/chromedriver-win64/chromedriver.exe')
+    service =  Service(executable_path='Yahoo_Project/chromedriver.exe')
     driver = webdriver.Chrome(service=service)
     driver.get("https://tw.news.yahoo.com/")
     time.sleep(3)
